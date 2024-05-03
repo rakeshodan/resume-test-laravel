@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "1cda7433-4753-4e05-826d-41f29391ad76",
+		"name": "Resume-laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Rakesh Ghasadiya\",\n    \"username\": \"rakesh\",\n    \"email\": \"rakesh@odaninfotech.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"rakesh@odaninfotech.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get resume",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/resume/jaypal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"resume",
+						"jaypal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store resume data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Rakesh Ghasadiya\",\n    \"profile_url\": \" https://feature-resume.resume-b1b.pages.dev/images/profile.png \",\n    \"role\": \"Full Stack Developer\",\n    \"location\": \"Ahmedabad, India\",\n    \"description_title\": \"PROFILE\",\n    \"description_text\": \"Over 8 years of hands-on expertise in full-stack development, seamlessly integrating web and mobile technologies to deliver robust solutions. Proficient in utilizing Node.js and Rust for backend development, Adept in frontend technologies such as TypeScript, HTML5, CSS3, and JavaScript, with specialized skills in React.js, Angular.js and Nest.js for creating dynamic and responsive user interfaces.Extensive experience in Native Android/iOS development and Flutter, leveraging the latest mobile technologies to create crossplatform, high-performance mobile applications.\",\n    \"social_link_mapper\": [\n        {\n            \"url\": \"https://www.amazon.in/\",\n            \"fav_icon\": \"test\",\n            \"order\": 1,\n            \"title\": \"test\"\n        }\n    ],\n    \"group_mapper\": [\n        {\n            \"title\": \"TECHNOLOGIES\",\n            \"order\": 1,\n            \"type\": \"left\",\n            \"group_item_mapper\": [\n                {\n                    \"title\": \"Nodejs\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Rust\",\n                    \"order\": 2\n                },\n                {\n                    \"title\": \"Python\",\n                    \"order\": 3\n                },\n                {\n                    \"title\": \"Native Android/iOS\",\n                    \"order\": 4\n                },\n                {\n                    \"title\": \"React\",\n                    \"order\": 5\n                },\n                {\n                    \"title\": \"Flutter\",\n                    \"order\": 6\n                },\n                {\n                    \"title\": \"Git\",\n                    \"order\": 7\n                },\n                {\n                    \"title\": \"MySQL\",\n                    \"order\": 8\n                },\n                {\n                    \"title\": \"PostgreSQL\",\n                    \"order\": 9\n                },\n                {\n                    \"title\": \"AWS\",\n                    \"order\": 10\n                },\n                {\n                    \"title\": \"Docker\",\n                    \"order\": 11\n                },\n                {\n                    \"title\": \"Kubernetes\",\n                    \"order\": 12\n                }\n            ]\n        },\n        {\n            \"title\": \"SKILLS\",\n            \"order\": 2,\n            \"type\": \"left\",\n            \"group_item_mapper\": [\n                {\n                    \"title\": \"Languages\",\n                    \"subtitle_1\": \"Nodejs, Rust, Python\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \" UI Skills\",\n                    \"subtitle_1\": \"Typescript, HTML5, CSS3, JavaScript, Reactjs, Angular, Nest.js, Web3js, Next.js, Babylon.js\",\n                    \"order\": 2\n                },\n                {\n                    \"title\": \"Mobile Tech\",\n                    \"subtitle_1\": \"Native Android/iOS, Flutter\",\n                    \"order\": 3\n                },\n                {\n                    \"title\": \"Database\",\n                    \"subtitle_1\": \"MySQL, PostgreSQL, JSON\",\n                    \"order\": 4\n                },\n                {\n                    \"title\": \"Frameworks\",\n                    \"subtitle_1\": \"WordPress, WooCommerce, Shopify, Laravel\",\n                    \"order\": 5\n                },\n                {\n                    \"title\": \"Testing Skills\",\n                    \"subtitle_1\": \"Manual Testing, DB Testing, Unit Testing-Jasmine, Automation Testing-Playwright\",\n                    \"order\": 6\n                },\n                {\n                    \"title\": \"IDE\",\n                    \"subtitle_1\": \"Visual Studio, Unreal Engine\",\n                    \"order\": 7\n                },\n                {\n                    \"title\": \"Agile/ Devops Skills\",\n                    \"subtitle_1\": \"AWS, Kubernetes, CI/CD, Docker, Terraform\",\n                    \"order\": 8\n                }\n            ]\n        },\n        {\n            \"title\": \"EDUCATION\",\n            \"order\": 1,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"title\": \"MCA\",\n                    \"subtitle_1\": \"2016\",\n                    \"subtitle_2\": \"Department of computer science (MKBU)\",\n                    \"description\": \"group item description\",\n                    \"order\": 1\n                }\n            ]\n        },\n        {\n            \"title\": \"WORK EXPERIENCE\",\n            \"order\": 2,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"title\": \"Full-Stack Developer\",\n                    \"subtitle_1\": \"Odan Infotech LLP | Since Sep-2021\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Mobile App Developer\",\n                    \"subtitle_1\": \"ByteIndia Solutions | Mar. 2018 - Jan. 2021\",\n                    \"order\": 2\n                },\n                {\n                    \"title\": \"Full-Stack Developer\",\n                    \"subtitle_1\": \"Freelancer | Jan. 2016 - Present\",\n                    \"order\": 3\n                },\n                {\n                    \"title\": \"IOS Developer\",\n                    \"subtitle_1\": \"Silent Infotech | Dec. 2015 - Jun. 2016\",\n                    \"order\": 4\n                }\n            ]\n        },\n        {\n            \"title\": \"PROJECTS\",\n            \"order\": 3,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"title\": \"Construction Management ERP\",\n                    \"subtitle_1\": \"2 Years\",\n                    \"subtitle_2\": \"Nodejs, React, Redis, Typescript, Postgresql, kafka, clickhouse, S3, Flutter (ongoing)\",\n                    \"description\": \"Led developing and implementing the \\\"Odan Construction Management ERP\\\" project, a comprehensive Enterprise Resource Planning (ERP) system tailored specifically for the construction industry. Collaborated with cross-functional teams to design and integrate modules for project scheduling, resource allocation, budgeting, and document management. Successfully streamlined communication and collaboration among project stakeholders, resulting in improved project efficiency and cost control. I have implemented robust reporting mechanisms to provide real-time insights into project progress and financial performance. The Odan ERP project exemplified my ability to manage complex, industry-specific software solutions and enhance organizational productivity in the construction sector.\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"MyExpense\",\n                    \"subtitle_1\": \"1.5 Years\",\n                    \"subtitle_2\": \"Nodejs, Typescript, Redis, Postgresql, docker, Android, iOS\",\n                    \"description\": \"Led the development of \\\"MyExpense,\\\" an innovative expense tracker catering to both organizational and personal financial needs. Implemented robust features for streamlined expense monitoring, customizable categorization, and insightful reporting. Achieved a userfriendly interface for effortless navigation, ensuring real-time updates and notifications for informed financial decision-making. The project addresses the complexities of expense management, providing a comprehensive solution for organizations and individuals alike.\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Basketball GM\",\n                    \"subtitle_1\": \"2 years\",\n                    \"subtitle_2\": \"Rust, Internet computer, smart contract, Web3\",\n                    \"description\": \"Designed and developed BBGM (Basketball Game Manager), an immersive basketball game within the Metaverse. Led a multidisciplinary team to create a dynamic gaming experience, integrating realistic basketball simulations with Metaverse elements. Implemented innovative features, fostering user engagement and contributing to the evolving landscape of virtual sports entertainment.\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Knocard\",\n                    \"subtitle_1\": \"1 year\",\n                    \"subtitle_2\": \"Nodejs, Flutter\",\n                    \"description\": \"Developed KnoCard, a business-centric social platform tailored for professionals, emphasizing service and product promotion. Engineered with an algorithm prioritizing quality connections, KnoCard is designed to attract high-value customers for businesses. Created an environment where professionals can showcase their expertise and build meaningful connections in the professional sphere.\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Weighbridge\",\n                    \"subtitle_1\": \"1 year\",\n                    \"subtitle_2\": \"Nodejs, Flutter\",\n                    \"description\": \"MyWeighbridge App allows weight data entry management by connecting all Remotely located weighbridges in one place on your mobile. The App is a streamlined, paperless data management service suitable for all industries and all public weighbridge operations. It is integrated with the primary weight management system, which includes logistics, and orders.\",\n                    \"order\": 1\n                },\n                {\n                    \"title\": \"Spartk TG\",\n                    \"subtitle_1\": \"8 Months\",\n                    \"subtitle_2\": \"Rust, Flutter, Native Android/iOS\",\n                    \"description\": \"Develop revolutionary advancements in the cloud telephony sector with SparkTG, providing state-of-the-art cloud IVR solutions. As a trailblazing IVR service provider, SparkTG transforms business communication, offering innovative features and unparalleled efficiency. Elevate your enterprises telephony experience by exploring the transformative solutions SparkTG brings to the table.\",\n                    \"order\": 1\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/resume/store",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"resume",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update resume",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"profile_url\": \"https://feature-resume.resume-b1b.pages.dev/images/profile.png\",\n    \"name\": \"Rakesh Ghasadiya\",\n    \"role\": \"Full Stack Developer\",\n    \"location\": \"Ahmedabad, India\",\n    \"description_title\": \"PROFILE\",\n    \"description_text\": \"Over 8 years of hands-on expertise in full-stack development, seamlessly integrating web and mobile technologies to deliver robust solutions. Proficient in utilizing Node.js and Rust for backend development, Adept in frontend technologies such as TypeScript, HTML5, CSS3, and JavaScript, with specialized skills in React.js, Angular.js and Nest.js for creating dynamic and responsive user interfaces.Extensive experience in Native Android/iOS development and Flutter, leveraging the latest mobile technologies to create crossplatform, high-performance mobile applications.\",\n    \"social_link_mapper\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://www.amazon.in/\",\n            \"fav_icon\": \"amazon\",\n            \"title\": \"Amazon\",\n            \"order\": 1\n        }\n    ],\n    \"group_mapper\": [\n        {\n            \"id\": 1,\n            \"title\": \"TECHNOLOGIES\",\n            \"order\": 1,\n            \"type\": \"left\",\n            \"group_item_mapper\": [\n                {\n                    \"id\": 1,\n                    \"title\": \"Nodejs\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 1,\n                    \"description\": null\n                },\n                {\n                    \"id\": 2,\n                    \"title\": \"Rust\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 2,\n                    \"description\": null\n                },\n                {\n                    \"id\": 3,\n                    \"title\": \"Python\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 3,\n                    \"description\": null\n                },\n                {\n                    \"id\": 4,\n                    \"title\": \"Native Android/iOS\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 4,\n                    \"description\": null\n                },\n                {\n                    \"id\": 5,\n                    \"title\": \"React\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 5,\n                    \"description\": null\n                },\n                {\n                    \"id\": 6,\n                    \"title\": \"Flutter\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 6,\n                    \"description\": null\n                },\n                {\n                    \"id\": 7,\n                    \"title\": \"Git\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 7,\n                    \"description\": null\n                },\n                {\n                    \"id\": 8,\n                    \"title\": \"MySQL\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 8,\n                    \"description\": null\n                },\n                {\n                    \"id\": 9,\n                    \"title\": \"PostgreSQL\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 9,\n                    \"description\": null\n                },\n                {\n                    \"id\": 10,\n                    \"title\": \"AWS\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 10,\n                    \"description\": null\n                },\n                {\n                    \"id\": 11,\n                    \"title\": \"Docker\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 11,\n                    \"description\": null\n                },\n                {\n                    \"id\": 12,\n                    \"title\": \"Kubernetes\",\n                    \"subtitle_1\": null,\n                    \"subtitle_2\": null,\n                    \"order\": 12,\n                    \"description\": null\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"title\": \"SKILLS\",\n            \"order\": 2,\n            \"type\": \"left\",\n            \"group_item_mapper\": [\n                {\n                    \"id\": 13,\n                    \"title\": \"Languages\",\n                    \"subtitle_1\": \"Nodejs, Rust, Python\",\n                    \"subtitle_2\": null,\n                    \"order\": 1,\n                    \"description\": null\n                },\n                {\n                    \"id\": 14,\n                    \"title\": \"UI Skills\",\n                    \"subtitle_1\": \"Typescript, HTML5, CSS3, JavaScript, Reactjs, Angular, Nest.js, Web3js, Next.js, Babylon.js\",\n                    \"subtitle_2\": null,\n                    \"order\": 2,\n                    \"description\": null\n                },\n                {\n                    \"id\": 15,\n                    \"title\": \"Mobile Tech\",\n                    \"subtitle_1\": \"Native Android/iOS, Flutter\",\n                    \"subtitle_2\": null,\n                    \"order\": 3,\n                    \"description\": null\n                },\n                {\n                    \"id\": 16,\n                    \"title\": \"Database\",\n                    \"subtitle_1\": \"MySQL, PostgreSQL, JSON\",\n                    \"subtitle_2\": null,\n                    \"order\": 4,\n                    \"description\": null\n                },\n                {\n                    \"id\": 17,\n                    \"title\": \"Frameworks\",\n                    \"subtitle_1\": \"WordPress, WooCommerce, Shopify, Laravel\",\n                    \"subtitle_2\": null,\n                    \"order\": 5,\n                    \"description\": null\n                },\n                {\n                    \"id\": 18,\n                    \"title\": \"Testing Skills\",\n                    \"subtitle_1\": \"Manual Testing, DB Testing, Unit Testing-Jasmine, Automation Testing-Playwright\",\n                    \"subtitle_2\": null,\n                    \"order\": 6,\n                    \"description\": null\n                },\n                {\n                    \"id\": 19,\n                    \"title\": \"IDE\",\n                    \"subtitle_1\": \"Visual Studio, Unreal Engine\",\n                    \"subtitle_2\": null,\n                    \"order\": 7,\n                    \"description\": null\n                },\n                {\n                    \"id\": 20,\n                    \"title\": \"Agile/ Devops Skills\",\n                    \"subtitle_1\": \"AWS, Kubernetes, CI/CD, Docker, Terraform\",\n                    \"subtitle_2\": null,\n                    \"order\": 8,\n                    \"description\": null\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"title\": \"EDUCATION\",\n            \"order\": 1,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"id\": 21,\n                    \"title\": \"MCA\",\n                    \"subtitle_1\": \"2016\",\n                    \"subtitle_2\": \"Department of computer science (MKBU)\",\n                    \"order\": 1,\n                    \"description\": \"group item description\"\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"title\": \"WORK EXPERIENCE\",\n            \"order\": 2,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"id\": 22,\n                    \"title\": \"Full-Stack Developer\",\n                    \"subtitle_1\": \"Odan Infotech LLP | Since Sep-2021\",\n                    \"subtitle_2\": null,\n                    \"order\": 1,\n                    \"description\": null\n                },\n                {\n                    \"id\": 23,\n                    \"title\": \"Mobile App Developer\",\n                    \"subtitle_1\": \"ByteIndia Solutions | Mar. 2018 - Jan. 2021\",\n                    \"subtitle_2\": null,\n                    \"order\": 2,\n                    \"description\": null\n                },\n                {\n                    \"id\": 24,\n                    \"title\": \"Full-Stack Developer\",\n                    \"subtitle_1\": \"Freelancer | Jan. 2016 - Present\",\n                    \"subtitle_2\": null,\n                    \"order\": 3,\n                    \"description\": null\n                },\n                {\n                    \"id\": 25,\n                    \"title\": \"IOS Developer\",\n                    \"subtitle_1\": \"Silent Infotech | Dec. 2015 - Jun. 2016\",\n                    \"subtitle_2\": null,\n                    \"order\": 4,\n                    \"description\": null\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"title\": \"PROJECTS\",\n            \"order\": 3,\n            \"type\": \"right\",\n            \"group_item_mapper\": [\n                {\n                    \"id\": 26,\n                    \"title\": \"Construction Management ERP\",\n                    \"subtitle_1\": \"2 Years\",\n                    \"subtitle_2\": \"Nodejs, React, Redis, Typescript, Postgresql, kafka, clickhouse, S3, Flutter (ongoing)\",\n                    \"order\": 1,\n                    \"description\": \"Led developing and implementing the \\\"Odan Construction Management ERP\\\" project, a comprehensive Enterprise Resource Planning (ERP) system tailored specifically for the construction industry. Collaborated with cross-functional teams to design and integrate modules for project scheduling, resource allocation, budgeting, and document management. Successfully streamlined communication and collaboration among project stakeholders, resulting in improved project efficiency and cost control. I have implemented robust reporting mechanisms to provide real-time insights into project progress and financial performance. The Odan ERP project exemplified my ability to manage complex, industry-specific software solutions and enhance organizational productivity in the construction sector.\"\n                },\n                {\n                    \"id\": 27,\n                    \"title\": \"MyExpense\",\n                    \"subtitle_1\": \"1.5 Years\",\n                    \"subtitle_2\": \"Nodejs, Typescript, Redis, Postgresql, docker, Android, iOS\",\n                    \"order\": 1,\n                    \"description\": \"Led the development of \\\"MyExpense,\\\" an innovative expense tracker catering to both organizational and personal financial needs. Implemented robust features for streamlined expense monitoring, customizable categorization, and insightful reporting. Achieved a userfriendly interface for effortless navigation, ensuring real-time updates and notifications for informed financial decision-making. The project addresses the complexities of expense management, providing a comprehensive solution for organizations and individuals alike.\"\n                },\n                {\n                    \"id\": 28,\n                    \"title\": \"Basketball GM\",\n                    \"subtitle_1\": \"2 years\",\n                    \"subtitle_2\": \"Rust, Internet computer, smart contract, Web3\",\n                    \"order\": 1,\n                    \"description\": \"Designed and developed BBGM (Basketball Game Manager), an immersive basketball game within the Metaverse. Led a multidisciplinary team to create a dynamic gaming experience, integrating realistic basketball simulations with Metaverse elements. Implemented innovative features, fostering user engagement and contributing to the evolving landscape of virtual sports entertainment.\"\n                },\n                {\n                    \"id\": 29,\n                    \"title\": \"Knocard\",\n                    \"subtitle_1\": \"1 year\",\n                    \"subtitle_2\": \"Nodejs, Flutter\",\n                    \"order\": 1,\n                    \"description\": \"Developed KnoCard, a business-centric social platform tailored for professionals, emphasizing service and product promotion. Engineered with an algorithm prioritizing quality connections, KnoCard is designed to attract high-value customers for businesses. Created an environment where professionals can showcase their expertise and build meaningful connections in the professional sphere.\"\n                },\n                {\n                    \"id\": 30,\n                    \"title\": \"Weighbridge\",\n                    \"subtitle_1\": \"1 year\",\n                    \"subtitle_2\": \"Nodejs, Flutter\",\n                    \"order\": 1,\n                    \"description\": \"MyWeighbridge App allows weight data entry management by connecting all Remotely located weighbridges in one place on your mobile. The App is a streamlined, paperless data management service suitable for all industries and all public weighbridge operations. It is integrated with the primary weight management system, which includes logistics, and orders.\"\n                },\n                {\n                    \"id\": 31,\n                    \"title\": \"Spartk TG\",\n                    \"subtitle_1\": \"8 Months\",\n                    \"subtitle_2\": \"Rust, Flutter, Native Android/iOS\",\n                    \"order\": 1,\n                    \"description\": \"Develop revolutionary advancements in the cloud telephony sector with SparkTG, providing state-of-the-art cloud IVR solutions. As a trailblazing IVR service provider, SparkTG transforms business communication, offering innovative features and unparalleled efficiency. Elevate your enterprises telephony experience by exploring the transformative solutions SparkTG brings to the table.\"\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/resume/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"resume",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update resume group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"TECHNOLOGIES\",\n    \"order\": 1,\n    \"type\": \"left\",\n    \"created_at\": \"2024-05-03T13:35:12.000000Z\",\n    \"updated_at\": \"2024-05-03T13:35:12.000000Z\",\n    \"group_item_mapper\": [\n        {\n            \"id\": 1,\n            \"title\": \"Nodejs\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 1,\n            \"description\": null\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Rust\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 2,\n            \"description\": null\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Python\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 3,\n            \"description\": null\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Native Android/iOS\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 4,\n            \"description\": null\n        },\n        {\n            \"id\": 5,\n            \"title\": \"React\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 5,\n            \"description\": null\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Flutter\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 6,\n            \"description\": null\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Git\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 7,\n            \"description\": null\n        },\n        {\n            \"id\": 8,\n            \"title\": \"MySQL\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 8,\n            \"description\": null\n        },\n        {\n            \"id\": 9,\n            \"title\": \"PostgreSQL\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 9,\n            \"description\": null\n        },\n        {\n            \"id\": 10,\n            \"title\": \"AWS\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 10,\n            \"description\": null\n        },\n        {\n            \"id\": 11,\n            \"title\": \"Docker\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 11,\n            \"description\": null\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Kubernetes\",\n            \"subtitle_1\": null,\n            \"subtitle_2\": null,\n            \"order\": 12,\n            \"description\": null\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/resume/group/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"resume",
+						"group",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YxL3VzZXIvbG9naW4iLCJpYXQiOjE3MTQ3NjQ1NjAsImV4cCI6MTcxNDc2ODE2MCwibmJmIjoxNzE0NzY0NTYwLCJqdGkiOiJkaVJ3TFVWUTMxbHFJeTFqIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.zs0UYvvnRPHQvAfOexdX681FfVpPMuGN7YBRtMpo8W4",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
